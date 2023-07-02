@@ -13,7 +13,7 @@ To interface with the LM35 sensor, please refer to the datasheet of the manufact
 
 ### Notes:
 - Please notice to configure the DMA mode to circular, so that the ADC conversion continuously. I stucked at this point for at least a day :((
-- Notice the order of configuring different module, the HAL_TIM_BASE_Star must be right before the HAL_ADC_Start_DMA, and the function DMA init must be called before the TIM init, or the DMA position will be misleaded.
+- Notice the order of configuring different module, the HAL_TIM_Base_Start must be right before the HAL_ADC_Start_DMA, and the function DMA_Init must be called before the TIM_Init, or the DMA position will be misleaded.
 
 ## References:
 1. Khaleg Magdy, STM32 ARM tutorial series, https://deepbluembedded.com/stm32-lm35-temperature-sensor-example-lm35-with-stm32-adc/.
